@@ -1,0 +1,55 @@
+Project area name :: IN_PUN_SSC_TEST_PROJECT_AREA
+Organisation name :: IN-PUN-KI-Temp-Integration-Test
+Repository name   :: GIT_RTC_INTEGRATION_V2
+WI ID :: Task 1177820 / Defect 1177824
+-------------------------------------------------
+Project area name :: IN_PUN_KI_test
+Organisation name :: IN-PUN-KI-Temp-Integration-Test
+Repository name   :: GIT_RTC_INTEGRATION_V2
+Business Need 1177828
+-------------------------------------
+RTC Project area name :: IN_PUN_KI_test
+Organisation name :: IN-PUN-KI-Temp-Integration-Test
+Repository name   :: GIT_RTC_INTEGRATION_V3
+Business Need 1177859
+Local directory :GIT_HUB_WITHOUT_INIT
+
+--------------------------------------------
+
+If not able to reflect the changes in RTC workitems (cache issue)
+ 
+https://explainshell.com/explain?cmd=git+commit+-am
+
+git rm -r --cached .
+git add .
+git commit -am "message"
+git push 
+
+-------------------------------------------------
+git general steps --> 
+
+git clone --> origin is added automatically in config file , master branch is set
+cd <directory_name_of_the_cloned_Repository>
+cd .git
+vi config --> Add RTC <repourl, repokey> --> save
+cd ..
+git add <file_to_be_pushed>
+git commit -m "Inital comment , workitem <id>"
+git push -u origin master
+
+--------------------------------
+
+Note: git config credential.helper manager
+---------------------------------------------------------
+
+GIT Details 
+org : IN-PUN-KI-Temp-Integration-Test
+repo : GIT_RTC_606_INTEGRATE 
+
+RTC : 
+git integration : GIT_RTC_606_INTEGRATE
+Proj Area : IN_PUN_KI_test
+Key : Atos@123
+webhook url : https://rtc5a.gsissc.myatos.net/rtc5a/service/com.ibm.team.git.common.internal.IGitHubInvokeService?repokey=a51db515732c452384414775a382fd65
+
+
